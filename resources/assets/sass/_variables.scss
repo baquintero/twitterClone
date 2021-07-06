@@ -1,0 +1,70 @@
+
+// Body
+$body-bg: #f5f8fa;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+/* SCSS HEX */
+$dodger-blue: #0099ffff;
+$maximum-blue-purple: #9d98f6ff;
+$wisteria: #d59de5ff;
+$wild-strawberry: #ff44aaff;
+$pink: #ffbccaff;
+
+/* SCSS HSL */
+$dodger-blue: hsla(204, 100%, 50%, 1);
+$maximum-blue-purple: hsla(243, 84%, 78%, 1);
+$wisteria: hsla(287, 58%, 76%, 1);
+$wild-strawberry: hsla(327, 100%, 63%, 1);
+$pink: hsla(347, 100%, 87%, 1);
+
+/* SCSS RGB */
+$dodger-blue: rgba(0, 153, 255, 1);
+$maximum-blue-purple: rgba(157, 152, 246, 1);
+$wisteria: rgba(213, 157, 229, 1);
+$wild-strawberry: rgba(255, 68, 170, 1);
+$pink: rgba(255, 188, 202, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0099ffff, #9d98f6ff, #d59de5ff, #ff44aaff, #ffbccaff);
+$gradient-right: linear-gradient(90deg, #0099ffff, #9d98f6ff, #d59de5ff, #ff44aaff, #ffbccaff);
+$gradient-bottom: linear-gradient(180deg, #0099ffff, #9d98f6ff, #d59de5ff, #ff44aaff, #ffbccaff);
+$gradient-left: linear-gradient(270deg, #0099ffff, #9d98f6ff, #d59de5ff, #ff44aaff, #ffbccaff);
+$gradient-top-right: linear-gradient(45deg, #0099ffff, #9d98f6ff, #d59de5ff, #ff44aaff, #ffbccaff);
+$gradient-bottom-right: linear-gradient(135deg, #0099ffff, #9d98f6ff, #d59de5ff, #ff44aaff, #ffbccaff);
+$gradient-top-left: linear-gradient(225deg, #0099ffff, #9d98f6ff, #d59de5ff, #ff44aaff, #ffbccaff);
+$gradient-bottom-left: linear-gradient(315deg, #0099ffff, #9d98f6ff, #d59de5ff, #ff44aaff, #ffbccaff);
+$gradient-radial: radial-gradient(#0099ffff, #9d98f6ff, #d59de5ff, #ff44aaff, #ffbccaff);
