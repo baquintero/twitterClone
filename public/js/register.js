@@ -15,7 +15,6 @@ $(document).ready(function() {
           };
 
           console.log(datos);
-          //localStorage.setItem("TokenUsuario", JSON.stringify(datos));
 
           $.ajax({
               type: "POST",
