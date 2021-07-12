@@ -7,7 +7,7 @@ $(document).ready(function() {
               email: user,
               password: contrasena
           };
-          localStorage.setItem("TokenUsuario", JSON.stringify(datos));
+          //localStorage.setItem("TokenUsuario", JSON.stringify(datos));
 
           $.ajax({
               type: "POST",
@@ -15,13 +15,13 @@ $(document).ready(function() {
               dataType: "json",
               data: (datos),
               success: function(data) {
-                    if(data['code']=404){
+                  if(data['code']=404){
                         swal({
                               title: 'Mensaje de Sesión', 
                               text: data['message'], 
                               icon: 'error'
                         });
-                    }
+                  }
                   console.log(data);
               }
           }); 
