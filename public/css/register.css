@@ -1,18 +1,30 @@
 body{
-      background-color: black;
+      background-color: rgb(15, 34, 46);
 }
-.login{
+.register{
+      background-color: black;
       color: rgba(255,255,255,.87);
       font-family:Verdana, Geneva, Tahoma, sans-serif;
-      max-width: 350px;
+      max-width: 600px;
+      border-radius: 20px;
+      margin: 30px auto 10px;
+}
+.form-register{
+      color: rgba(255,255,255,.87);
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      max-width: 450px;
       margin: 40px auto 0;
+}
+.svg-icon-tw-home{
+      padding-top: 20px;
+      text-align: center;
 }
 .svg-icon-tw-home svg{
       fill: rgba(255,255,255,.87);
-      width: 2.3em;
+      width: 2.1em;
 }
 .title-home{
-      font-size: 1em;
+      font-size: .9em;
       font-weight: 900;
       line-height:2.5em;
       letter-spacing: 0px;
@@ -23,6 +35,10 @@ body{
 }
 .form-login .input-group {
       position: relative;
+}
+.form-login .names{
+      display: flex;
+      justify-content: space-between;
 }
 .form-login .input-group input {
       width: 100%;
@@ -77,6 +93,7 @@ body{
 .links{
       color: black;
       text-align: center;
+      padding-bottom: 30px;
 }
 .links a{
       font-size: .8em;

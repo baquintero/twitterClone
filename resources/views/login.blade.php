@@ -56,14 +56,16 @@
                 </form>
             
                 <div class="links">
-                    <a href="/">¿Olvidaste tu contraseña?</a>
+                    <a href="/" style="color:rgba(255,255,255,.5); cursor:default;">¿Olvidaste tu contraseña?</a>
                     &nbsp;
-                    <a href="/">Registrate en twitter</a>
+                    <a href="register">Registrate en twitterClon</a>
                 </div>
            </div>
     
 
            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     </body>
+
+   
    
 </html>
