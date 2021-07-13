@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
       $('.btn-login').click(function() {
           var nameuser        = $('#user').val();
           var name            = $('#name').val();
@@ -14,8 +15,6 @@ $(document).ready(function() {
               password: contrasena
           };
 
-          console.log(datos);
-
           $.ajax({
               type: "POST",
               url: "/api/register",
@@ -23,8 +22,6 @@ $(document).ready(function() {
               data: (datos),
               success: function(data) {
                   
-                  
-
                   if(data['code']==404){
                         swal({
                               title: 'Mensaje de Registro', 
@@ -38,11 +35,10 @@ $(document).ready(function() {
                                     text: data['message'], 
                                     icon: 'success'
                               });
+                                   
+                              return view('login');
                         }
                   }
-
-                  console.log(data);
-                
               }
           }); 
   

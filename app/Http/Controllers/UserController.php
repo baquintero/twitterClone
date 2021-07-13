@@ -86,7 +86,7 @@ class UserController extends Controller{
         if($validate->fails()){
             
             //La validacion ha fallado
-            $signup = array(
+            $login = array(
                 'status'    => 'error',
                 'code'      =>  404,
                 'message'   =>  'El usuario no se ha podido identificar',
@@ -99,15 +99,23 @@ class UserController extends Controller{
             $pwd = hash('sha256', $params_array['password']);
 
             //Devolver token o datos
-            $signup = $jwtAuth->signup($params_array['email'], $pwd);
+            $login = array(
+                'status'    => 'success',
+                'code'      =>  202,
+                'token'    => $jwtAuth->signup($params_array['email'], $pwd)
+            );
 
             if(!empty($params->getToken)){
-                $signup = $jwtAuth->signup($params_array['email'], $pwd, true);
+                $login = array(
+                    'status'    => 'success',
+                    'code'      =>  202,
+                    'token'    => $jwtAuth->signup($params_array['email'], $pwd, true)
+                );
+                
             }
-
         }
 
-        return $signup;
+        return $login;
     }
 
     public function update(Request $request){
@@ -125,5 +133,72 @@ class UserController extends Controller{
         die();
     }
 
-    
+    public function detail($email){
+        $user = User::where('email', '=', $email)->firstOrFail();
+
+        if(is_object($user)){
+            $data = array(
+                'code' => 202,
+                'status'=> 'success',
+                'user' => $user
+            );
+        } else {
+            $data =  array(
+                'code' => 202,
+                'status'=> 'success',
+                'message' => 'El usuario no existe'
+            );
+        }
+
+        return response()->json($data);
+    }
+
+    public function detailUserName($id){
+        $user = User::find($id);
+
+        if(is_object($user)){
+            $data = $user->name_user;
+            
+        } else {
+            $data =  array(
+                'code' => 202,
+                'status'=> 'success',
+                'message' => 'El usuario no existe'
+            );
+        }
+
+        return $data;
+    }
+
+    public function detailName($id){
+        $user = User::find($id);
+
+        if(is_object($user)){
+            $data = $user->name;
+        } else {
+            $data =  array(
+                'code' => 202,
+                'status'=> 'success',
+                'message' => 'El usuario no existe'
+            );
+        }
+
+        return $data;
+    }
+
+    public function detailTime($id){
+        $user = User::find($id);
+
+        if(is_object($user)){
+            $data = $user->created;
+        } else {
+            $data =  array(
+                'code' => 202,
+                'status'=> 'success',
+                'message' => 'El usuario no existe'
+            );
+        }
+
+        return $data;
+    }
 }
