@@ -59,10 +59,13 @@
                 </div>
 
                 <div class="buttons">
+                    <a href="register">
                     <div class="btn-register">
                             Regístrate
                     </div>
 
+                    </a>
+                    
                     <a href="login">
                         <div class="btn-login">
                             Iniciar sesión

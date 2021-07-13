@@ -83,3 +83,10 @@ body{
       text-decoration: none;
       color: rgba(0, 153, 255, .9);
 }
+
+
+@media screen and (max-width: 500px) {
+      .login {
+            max-width: 275px;
+      }
+}

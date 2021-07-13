@@ -69,7 +69,7 @@
 
                         <div class="input-group">
                               <input type="password" name="password" id="password" required>
-                              <label for="loginPassword">Contraseña</label>
+                              <label for="loginPassword" id="labelPassword">Contraseña</label>
                         </div>
                   
                         <div class="btn-login" type="submit">

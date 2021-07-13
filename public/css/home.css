@@ -101,3 +101,53 @@ footer{
       font-size: .8em;
 }
 
+
+
+@media screen and (min-width: 2560px) {
+      footer {
+            padding: 2.5em;
+      }
+}
+
+
+@media screen and (max-width: 1500px) {
+      footer {
+            padding: 2em;
+      }
+
+}
+
+@media screen and (max-width: 1365px) {
+      .title-home {
+            font-size: 1.8em;
+      }
+      .p-home {
+            margin-bottom: 60px;
+      }
+}
+
+@media screen and (max-width: 768px) {
+      .svg-icon-tw svg {
+            fill: white;
+            width: 13em;
+            height: 16em;
+            margin: 0 auto;
+            padding: 10em 0;
+            display: block;
+        }
+      .title-home {
+            font-size: 1.5em;
+      }
+      .p-home {
+            font-size: 1.2em;
+            margin-bottom: 5em;
+      }
+
+}
+
+@media screen and (max-width: 500px) {
+      .content-home {
+            display: flex;
+            flex-direction: column;
+        }
+} 

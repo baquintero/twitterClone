@@ -100,3 +100,33 @@ body{
       text-decoration: none;
       color: rgba(0, 153, 255, .9);
 }
+
+
+@media screen and (max-width: 500px) {
+      .title-home {
+            margin-left: 30px;
+        }
+      .form-login .input-group input {
+            width: 90%;
+            font-size: .8rem;
+           
+      }
+      .form-login .names {
+            justify-content: space-around;
+        }
+      .form-login .input-group label {
+            font-size: .8rem;
+           
+      }
+      #password{
+            width: 85%;
+            margin-left: 20px;
+      }
+      #labelPassword{
+            left: 30px;
+      }
+      .btn-login {
+            width: 80%;
+            margin: 10px auto;
+        }
+}

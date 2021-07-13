@@ -242,3 +242,82 @@ body{
       background: rgba(0, 153, 255, 1);
 
 }
+
+
+@media screen and (max-width: 1500px) {
+      .logout {
+            width: 29.6%;
+      }
+}
+
+@media screen and (max-width: 1200px) {
+      .logout {
+            width: 29.6%;
+        }
+      .header-timeline,.tweet-publish,.tweets {
+            margin-left: 23.2%;
+      }
+}
+
+@media screen and (max-width: 768px) {
+      body {
+            background-color: black;
+            padding-left: 1em;
+            padding-right: 4em;
+      }
+      .nav-home {
+            width: 22%;
+      }
+      .list-home{
+            font-size: .8em;
+      }
+      .list-home li i {
+            font-size: 1.3em;
+      }
+      .profile img {
+            width: 30px;
+            height: 30px;
+      }
+      .info-user .name {
+            font-size: .5em;
+      }
+      .info-user .user {
+            font-size: .4em;
+      }
+      .logout {
+            width: 20%;
+      }
+      .header-timeline,.tweet-publish,.tweets {
+            margin-left: 24.9%;
+            width: 61%;
+      }
+      .btn-logout {
+            padding: 10px;
+            font-size: .6em;
+        }
+
+}
+
+@media screen and (max-width: 500px) {
+      body {
+            background-color: black;
+            padding-left: 0em;
+            padding-right: 0em;
+      }
+      .nav-home {
+            display: none;
+      }
+      .logout {
+            display: none;
+        }
+        .header-timeline, .tweet-publish, .tweets {
+            width: 100%;
+            margin-left: 0;
+        }
+        .header-info-tweet .user {
+            font-size: .7em;
+        }
+        .time{
+              font-size: .4em;
+        }
+}
