@@ -126,7 +126,7 @@
                     Configuración
                 </a>
                 <a href="">
-                    © 2021 TwitterClon
+                    © 2021 TwitterClon | Desarrollado por Brayan Quintero
                 </a>
            </div>
        </footer>
